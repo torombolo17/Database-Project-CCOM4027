@@ -126,7 +126,7 @@
 		<h3>Products</h3>
 		<?php
 			if(!$flagprod){
-				echo "No research yet.";
+				echo "No products yet.";
 			}
 			else{
 				echo "<a href= publicproduct2.php?user=".$username."&prod=".$resultofq3['id_producto'].">".$resultofq3['nombre_prod']."</a>";

@@ -120,7 +120,7 @@
 		<h3>Products</h3>
 		<?php
 			if(!$flagprod){
-				echo "No research yet.";
+				echo "No products yet.";
 			}
 			else{
 				echo "<a href= publocproduct3.php?prod=".$resultofq3['id_producto'].">".$resultofq3['nombre_prod']."</a>";
