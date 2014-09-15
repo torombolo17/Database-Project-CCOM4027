@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<?php
+	$host = "localhost";
+	$usuariobd = "jdelavega";
+	$password = "j.r.delavega17@gmail.com";
+	$database = "inass_estudiantes";
+	$conection = mysqli_connect($host, $usuario, $password, $database)
+?>
+	<head>
+		<title>Name of the app</title>
+		<head>
+		<link rel="stylesheet" href="bootstrap-3.1.1-dist/css/bootstrap.css" />
+	</head>
+	</head>
+
+	<body>
+
+		<!------------ Sign Up view ------------>
+
+		<div id="lrd-login">
+
+			<nav class="navbar navbar-default" role="navigation">
+				<div class="container-fluid">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="#">Home</a>
+					</div>
+
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<ul class="nav navbar-nav">
+							<li>
+								<a href="#">Profile</a>
+							</li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Researchs <b class="caret"></b></a>
+								<ul class="dropdown-menu">
+									<li>
+										<a href="#">ICOM5007</a>
+									</li>
+									<li>
+										<a href="#">CCOM4009</a>
+									</li>
+									<li>
+										<a href="#">ICOM4215</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+						<ul class="nav navbar-nav navbar-right">
+							<li>
+								<a href = "login.html" onclick="">Sign out</a>
+							</li>
+						</ul>
+					</div><!-- /.navbar-collapse -->
+				</div><!-- /.container-fluid -->
+			</nav>
+
+			<ul class="nav nav-tabs">
+				<li>
+					<a href="profile.html">Back to Profile</a>
+				</li>
+				<li class="active">
+					<a href="#">Add to Timeline</a>
+				</li>
+			</ul>
+			<br />
+
+			<div style="padding-left: 200px; padding-right: 200px">
+				<div class="input-group">
+					<span class="input-group-addon">Investigation title*</span>
+					<input type="text" class="form-control" placeholder="Some_research">
+				</div>
+				<br />
+				<div class="input-group">
+					<span class="input-group-addon">Year*</span>
+					<input type="text" class="form-control" placeholder="2014">
+				</div>
+				<br />
+				<div class="input-group">
+					<span class="input-group-addon">Research Program</span>
+					<select id="research program" class="form-control">
+						<option value="paper" title="paper">summer</option>
+						<option value="banner" title="banner">schoolar residence</option>
+					</select>
+				</div>
+				<br />
+				<div class="input-group">
+					<span class="input-group-addon">Product of the research</span>
+					<input type="text" class="form-control" placeholder="Some_name_for_product">
+				</div>
+				<br />
+				<div class="input-group">
+					<span class="input-group-addon">Date of publication</span>
+					<input type="email" class="form-control" placeholder="05/29/2014">
+				</div>
+				<br />
+				<div class="input-group">
+					<span class="input-group-addon">Type of the product</span>
+					<select id="lrd-universityName" class="form-control">
+						<option value="paper" title="paper">paper</option>
+						<option value="banner" title="banner">poster</option>
+						<option value="software" title="software">software</option>
+					</select>
+				</div>
+				<br />
+			<div align="center">
+				<a href = "profile.html"
+				<button type="button" class="btn btn-primary" onclick="">
+					Done
+				</button>
+				<a/>
+				<button type="button" class="btn btn-danger" onclick="">
+					Cancel
+				</button>
+			</div>
+
+		</div>
+
+		<!------------ End of Sign Up view ------------>
+
+	</body>
+</html>
